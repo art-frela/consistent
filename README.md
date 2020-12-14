@@ -17,7 +17,7 @@ package main
 
 import (
 	"log"
-	"github.com/lafikl/consistent"
+	"github.com/art-frela/consistent"
 )
 
 func main() {

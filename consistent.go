@@ -61,10 +61,7 @@ func (c *Consistent) Add(host string) {
 	}
 	// sort hashes ascendingly
 	sort.Slice(c.sortedSet, func(i int, j int) bool {
-		if c.sortedSet[i] < c.sortedSet[j] {
-			return true
-		}
-		return false
+		return c.sortedSet[i] < c.sortedSet[j]
 	})
 }
 
@@ -185,7 +182,7 @@ func (c *Consistent) Remove(host string) bool {
 func (c *Consistent) Hosts() (hosts []string) {
 	c.RLock()
 	defer c.RUnlock()
-	for k, _ := range c.loadMap {
+	for k := range c.loadMap {
 		hosts = append(hosts, k)
 	}
 	return hosts

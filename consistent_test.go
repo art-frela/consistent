@@ -35,7 +35,7 @@ func TestRemove(t *testing.T) {
 	c.Remove("127.0.0.1:8000")
 
 	if len(c.sortedSet) != 0 && len(c.hosts) != 0 {
-		t.Fatal(("remove is not working"))
+		t.Fatal("remove is not working")
 	}
 
 }
