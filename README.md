@@ -1,4 +1,7 @@
 # Package consistent
+
+> source: [github.com/lafikl/consistent](https://github.com/lafikl/consistent)
+
 A Golang implementation of Consistent Hashing and Consistent Hashing With Bounded Loads.
 
 https://en.wikipedia.org/wiki/Consistent_hashing

@@ -4,7 +4,7 @@ import (
 	"log"
 	"testing"
 
-	"github.com/lafikl/consistent"
+	"github.com/art-frela/consistent"
 )
 
 func Example_consistent(t *testing.T) {
